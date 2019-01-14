@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="nyh%20IDE_files/clike.js"></script><script src="nyh%20IDE_files/active-line.js"></script><script src="nyh%20IDE_files/overlay.js"></script><script src="nyh%20IDE_files/codemirror.js"></script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="referrer" content="no-referrer">
+				<title>在线IDE - Horse OJ</title>
+		
+		<!-- UOJ ico -->
+		<link rel="shortcut icon" href="http://10.248.5.4/pictures/UOJ.ico">
+		
+		<!-- HOJ main css -->
+		<link rel="stylesheet" href="nyh%20IDE_files/css.css">
+				<!-- HOJ extra css -->
+		<link rel="stylesheet" href="nyh%20IDE_files/css_002.css">
+				
+		<!-- HOJ main js -->
+		<script src="nyh%20IDE_files/js"></script>
+		<!-- time -->
+		<script>begin=new Date("2019/01/14 13:02:38").getTime();</script>
+				<!-- HOJ extra js -->
+		<script src="nyh%20IDE_files/js_002"></script>
+				
+		
+				<!-- MathJax -->
+		<script type="text/x-mathjax-config;executed=true">
+			MathJax.Hub.Config({
+				showProcessingMessages: false,
+				tex2jax: {
+					inlineMath: [["$", "$"], ["\\\\(", "\\\\)"]],
+					processEscapes:true
+				},
+				menuSettings: {
+					zoom: "Hover"
+    			}
+			});
+		</script>
+		<script src="nyh%20IDE_files/MathJax.js"></script>
+				
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<!--night mode-->
+		<link type="text/css" rel="stylesheet" href="" id="night-mode-css">
+		
+		<!--prefetch DefSans.otf for poem-->
+		<link rel="prefetch" href="http://10.248.5.4/fonts/DefSans.otf">
+	<link type="text/css" rel="stylesheet" href="nyh%20IDE_files/codemirror.css"><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+	<body role="document"><div id="MathJax_Message" style="display: none;"></div>
+						<div class="container theme-showcase" role="main" style="width:95%;">
+						<div><ul class="nav nav-pills pull-right" role="tablist">
+				<li role="presentation">
+				<span style="display: block; width: 145px; text-align: center; height: 50px; padding-top: 15px;">离 NOIP 2019 还有</span>
+				</li>	
+				<li>
+					<canvas id="timecanvas" height="40px" width="200px" style="padding-left: 10px;padding-top: 5px;"></canvas>
+				</li>
+				<li>
+					<div id="clock">
+						<p class="date" id="clock-date">2019-01-14 星期一</p>
+						<p class="time" id="clock-time">13:03:06</p>
+					</div>
+				</li>
+									<li class="dropdown">
+						<a href="#" data-toggle="dropdown" style="display:block;height:50px;padding-top:15px;">
+							<span class="uoj-username" style="color:rgb(78,147,172)">nyh</span> 						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li role="presentation"><a href="http://10.248.5.4/user/profile/nyh">个人信息</a></li>
+							<li role="presentation"><a href="http://10.248.5.4/blogof/nyh">个人博客</a></li>
+
+							<li role="presentation"><a onclick="" target="_blank" href="http://10.248.5.4/user/msg">私信&nbsp;&nbsp;</a></li>
+
+							<li role="presentation"><a onclick="" target="_blank" href="http://10.248.5.4/user/system-msg">系统消息&nbsp;&nbsp;</a></li>
+													<li role="presentation"><a target="_blank" href="http://10.248.5.4/user/upload">上传文件</a></li>
+													<li role="presentation"><a href="http://10.248.5.4/logout?_token=EajiwT8Trj9ndlW9G2VxMbs6NqQpmI3LuoKbCDQHeVzE5wiOv4nrYd8F6GAP" onclick="return confirm('确认登出吗');">登出</a></li>
+							<li role="presentation"><a href="http://10.248.5.4/logout?all=1&amp;_token=EajiwT8Trj9ndlW9G2VxMbs6NqQpmI3LuoKbCDQHeVzE5wiOv4nrYd8F6GAP" onclick="return confirm('确认让所有设备登出吗');">让所有设备登出</a></li>
+						</ul>
+					</li>
+								</ul>
+				<h1 class="hidden-xs"><img src="nyh%20IDE_files/UOJ_small.png" alt="UOJ Logo" class="img-rounded" style="width:39px; height:39px;"> Horse OJ</h1>
+				<h1 class="visible-xs">HOJ</h1>
+			</div>
+			<div class="navbar navbar-default" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="http://10.248.5.4/">HOJ</a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="http://10.248.5.4/contests">比赛</a></li>
+				<li><a href="http://10.248.5.4/exercises">练习</a></li>
+								<li><a href="http://10.248.5.4/ladder">天梯</a></li>
+				<li><a href="http://10.248.5.4/problems">题库</a></li>
+				<li><a href="http://10.248.5.4/submissions">提交记录</a></li>
+				<li><a href="http://10.248.5.4/hacks">Hack!</a></li>
+				<li><a target="_blank" href="http://10.248.5.4/ide">在线IDE</a></li>
+								<li><a href="http://10.248.5.4/blogs">博客</a></li>
+				<li><a href="http://10.248.5.4/faq">帮助</a></li>
+								<li><a href="http://10.248.5.4/server">评测机</a></li>
+							</ul>
+		</div><!--/.nav-collapse -->
+	</div>
+</div>
+
+						<div class="uoj-content">
+
+
+<h3 class="text-center">HOJ在线IDE</h3>
+<h4 class="text-center">时间限制10s&nbsp;&nbsp;&nbsp;&nbsp;空间限制1024MB</h4>
+<div class="top-buffer-sm"></div>
+<form action="/ide" method="post" class="form-horizontal" id="form-custom_test" enctype="multipart/form-data"><input type="hidden" name="_token" value="EajiwT8Trj9ndlW9G2VxMbs6NqQpmI3LuoKbCDQHeVzE5wiOv4nrYd8F6GAP"><div class="form-group" id="form-group-custom_test_answer"><label class="col-sm-2 control-label"><div class="text-left">源文件:answer</div></label><label class="col-sm-1 control-label" for="custom_test_answer_language">语言</label><div class="col-sm-2"><select id="input-custom_test_answer_language" name="custom_test_answer_language" class="form-control input-sm"><option selected="selected">C++</option><option>C++O2</option><option>C++17</option><option>C</option><option>Python2.7</option><option>Python3</option><option>Pascal</option></select></div><div class="col-sm-offset-3 col-sm-2 radio"><label><input type="radio" name="custom_test_answer_upload_type" value="editor" checked="checked"> 使用编辑器上传</label></div><div class="col-sm-2 radio"><label><input type="radio" name="custom_test_answer_upload_type" value="file"> 从本地文件上传</label></div><div id="div-help-custom_test_answer_language" class="col-sm-12 text-warning top-buffer-sm"></div><div id="div-custom_test_answer_editor" class="col-sm-12"><textarea class="form-control" id="input-custom_test_answer_editor" name="custom_test_answer_editor" style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 69px; display: none;"></textarea><div class="CodeMirror cm-s-default CodeMirror-wrap " style="box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 10px;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 33px;"><textarea style="position: absolute; padding: 0px; width: 1px; height: 1em; outline: currentcolor none medium;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-hscrollbar" style="left: 29px;"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-vscrollbar"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 29px; min-height: 22px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: currentcolor none medium;"><div class="CodeMirror-measure"><div style="width: 50px; height: 50px; overflow-x: scroll;"></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 14px;">&nbsp;</div></div><div class="CodeMirror-code"><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-wrapper" style="position: absolute; left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 20px;">1</div></div><pre class=""><span><span>​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 30px; width: 1px; top: 22px;"></div><div class="CodeMirror-gutters" style="height: 300px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 28px;"></div></div></div></div><div class="checkbox text-right"><label><input type="checkbox" checked="checked"> 使用高级编辑器</label></div></div><div id="div-custom_test_answer_file" class="col-sm-12" style="display: none;"><input type="file" id="input-custom_test_answer_file" name="custom_test_answer_file" style="display: none"><div class="input-group"><input class="form-control" type="text" readonly="readonly"><span class="input-group-btn"><button type="button" class="btn btn-primary" style="width: 100px;"><span class="glyphicon glyphicon-folder-open"></span> 浏览</button></span></div><span class="help-block" id="help-custom_test_answer_file"></span></div></div>
+<script type="text/javascript">
+$('#form-group-custom_test_answer').source_code_form_group('custom_test_answer', '源文件:answer', "<option selected=\"selected\">C++<\/option><option>C++O2<\/option><option>C++17<\/option><option>C<\/option><option>Python2.7<\/option><option>Python3<\/option><option>Pascal<\/option>");
+</script><div class="form-group" id="form-group-custom_test_input"><label class="col-sm-2 control-label"><div class="text-left">文本文件:input.txt</div></label><div class="top-buffer-sm"></div><div class="col-sm-offset-6 col-sm-2 radio"><label><input type="radio" name="custom_test_input_upload_type" value="editor" checked="checked"> 使用编辑器上传</label></div><div class="col-sm-2 radio"><label><input type="radio" name="custom_test_input_upload_type" value="file"> 从本地文件上传</label></div><div id="div-custom_test_input_editor" class="col-sm-12"><textarea class="form-control" id="input-custom_test_input_editor" name="custom_test_input_editor" style="overflow: hidden; overflow-wrap: break-word; resize: horizontal; height: 69px;"></textarea><div class="checkbox text-right"><label><input type="checkbox"> 使用高级编辑器</label></div></div><div id="div-custom_test_input_file" class="col-sm-12" style="display: none;"><input type="file" id="input-custom_test_input_file" name="custom_test_input_file" style="display: none"><div class="input-group"><input class="form-control" type="text" readonly="readonly"><span class="input-group-btn"><button type="button" class="btn btn-primary" style="width: 100px;"><span class="glyphicon glyphicon-folder-open"></span> 浏览</button></span></div><span class="help-block" id="help-custom_test_input_file"></span></div></div>
+<script type="text/javascript">
+$('#form-group-custom_test_input').text_file_form_group('custom_test_input', '文本文件:input.txt');
+</script><div id="div-custom_test_result"></div><div class="text-center"><button type="submit" id="button-submit-custom_test" name="submit-custom_test" value="custom_test" class="btn btn-default">运行(Ctrl+Enter)</button></div></form><script type="text/javascript">
+$(document).ready(function() {
+	$('#form-custom_test').keydown(function(e) {
+		if (e.keyCode == 13 && e.ctrlKey) {
+			$('#button-submit-custom_test').click();
+		}
+	});
+	$('#form-custom_test').submit(function(e) {
+		var ok = true;
+		var post_data = {};
+		if (post_data != {}) {
+			post_data['check-custom_test'] = "";
+			$.ajax({
+				url : '/ide',
+				type : 'POST',
+				dataType : 'json',
+				async : false,
+
+				data : post_data,
+				success : function(data) {
+					if (data.extra != undefined) {
+						alert(data.extra);
+						ok = false;
+					}
+				}
+			});
+		}
+		$(this).find("input[type='file']").each(function() {
+			for (var i = 0; i < this.files.length; i++) {
+				if (this.files[i].size > 50 * 1024 * 1024) {
+					$('#div-' + $(this).attr('name')).addClass('has-error');
+					$('#help-' + $(this).attr('name')).text('文件大小不能超过50M');
+					ok = false;
+				} else {
+					$('#div-' + $(this).attr('name')).removeClass('has-error');
+					$('#help-' + $(this).attr('name')).text('');
+				}
+			}
+		});
+		e.preventDefault();
+		if (ok) {
+			$(this).ajaxSubmit({
+				beforeSubmit: function(formData) {
+					formData.push({name: 'submit-custom_test', value: 'custom_test', type: 'submit'});
+				},
+				success : function(response_text) {custom_test_onsubmit(response_text, $('#div-custom_test_result')[0], '/ide?get=custom-test-status-details')}
+			});
+		}
+	});
+});
+</script></div>
+
+			</div>
+						<div class="uoj-footer">
+<!--禁用语言切换
+				<p>
+					<a href="http://10.248.5.4/ide?locale=zh-cn"><img src="//img.uoj.ac/utility/flags/24/cn.png" alt="中文" /></a> 
+					<a href="http://10.248.5.4/ide?locale=en"><img src="//img.uoj.ac/utility/flags/24/gb.png" alt="English" /></a>
+				</p>
+-->
+				<div class="text-center">
+					<div class="bootstrap-switch bootstrap-switch-wrapper bootstrap-switch-off bootstrap-switch-id-input-night-mode bootstrap-switch-animate" style="width: 248px;"><div class="bootstrap-switch-container" style="width: 372px; margin-left: -124px;"><span class="bootstrap-switch-handle-on bootstrap-switch-primary" style="width: 124px;">已开启</span><span class="bootstrap-switch-label" style="width: 124px;">夜间模式</span><span class="bootstrap-switch-handle-off bootstrap-switch-primary" style="width: 124px;">已关闭</span><input type="checkbox" id="input-night-mode" name="night-mode"></div></div>				</div>
+				<ul class="list-inline top-buffer-md">
+					<li>Horse OJ</li>
+									</ul>
+				<p><a href="http://10.248.5.4/copyright">Copyright © 2018-2019 ITcarrot and dddmh. All rights reserved.</a></p>
+				<center>
+				<div style="width:120px;height:80px;overflow:hidden;margin-bottom:10px;">
+				<img src="nyh%20IDE_files/ChineseFlag.png" style="width:120px;height:80px;position:relative;
+				top:0;
+				opacity:1;
+				transition:top 5s ease-in-out, opacity 5s cubic-bezier(0, 0.3, 1, 0.7);" id="ChineseFlag">
+				</div>
+				</center>
+			</div>
+					
+		<!-- /container -->
+	
+
+
+<textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px none; padding: 0px; box-sizing: content-box; overflow-wrap: break-word; height: 0px !important; min-height: 0px !important; overflow: hidden; transition: none 0s ease 0s; font-family: sans-serif; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; line-height: 20px; width: 1314px;" class="autosizejs" id="autosizejs">
+</textarea></body></html>
